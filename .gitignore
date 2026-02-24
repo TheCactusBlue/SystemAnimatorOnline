@@ -1,8 +1,97 @@
-﻿
+# Private / local config
 _private/
 TEMP/_config_local/
-node_modules/OSC.js/
-node_modules/OSC-js/
-node_modules/nut.js/
+
+# Compiled executables
 au3/*.exe
 au3/*/*.exe
+
+# ── Dependencies (installed via pnpm) ─────────────────────────────────
+node_modules/
+
+# ── Vite build output ────────────────────────────────────────────────
+dist/
+
+# ── Vendored JS libraries (copied from node_modules by setup-vendor) ─
+# These files are installed from npm and copied to their expected paths
+# by `pnpm setup-vendor`. Do NOT commit them.
+
+# Simple JS libraries in js/
+js/jszip.js
+js/encoding.min.js
+js/encoding.min.js.map
+js/nipplejs.js
+js/peerjs.min.js
+js/rbush.min.js
+js/jsmediatags.js
+
+# Scoped npm packages in js/
+js/@huggingface/
+js/@mediapipe/
+
+# MediaPipe WASM/binary assets (from @mediapipe packages, copied by setup-vendor)
+js/face_mesh_solution_packed_assets.data
+js/face_mesh_solution_simd_wasm_bin.wasm
+js/face_mesh_solution_wasm_bin.wasm
+js/hands_solution_packed_assets.data
+js/hands_solution_simd_wasm_bin.wasm
+js/hands_solution_wasm_bin.wasm
+js/holistic_solution_packed_assets.data
+js/holistic_solution_simd_wasm_bin.wasm
+js/holistic_solution_wasm_bin.wasm
+js/pose_solution_packed_assets.data
+js/pose_solution_simd_wasm_bin.wasm
+js/pose_solution_wasm_bin.wasm
+
+# Three.js core (from npm `three` package)
+three.js/three.module.js
+three.js/three.module.min.js
+
+# Three.js addons (from npm `three` examples)
+three.js/loaders/EXRLoader.js
+three.js/loaders/FBXLoader.js
+three.js/loaders/GLTFLoader.js
+three.js/loaders/MMDLoader.js
+three.js/loaders/RGBELoader.js
+three.js/loaders/TGALoader.js
+three.js/animation/CCDIKSolver.js
+three.js/animation/MMDAnimationHelper.js
+three.js/animation/MMDPhysics.js
+three.js/effects/OutlineEffect.js
+three.js/postprocessing/EffectComposer.js
+three.js/postprocessing/MaskPass.js
+three.js/postprocessing/OutputPass.js
+three.js/postprocessing/Pass.js
+three.js/postprocessing/RenderPass.js
+three.js/postprocessing/SMAAPass.js
+three.js/postprocessing/ShaderPass.js
+three.js/postprocessing/UnrealBloomPass.js
+three.js/shaders/CopyShader.js
+three.js/shaders/LuminosityHighPassShader.js
+three.js/shaders/MMDToonShader.js
+three.js/shaders/OutputShader.js
+three.js/shaders/SMAAShader.js
+three.js/shaders/BokehShader2.js
+three.js/curves/NURBSCurve.js
+three.js/curves/NURBSUtils.js
+three.js/math/Capsule.js
+three.js/math/Octree.js
+three.js/exporters/GLTFExporter.js
+three.js/utils/BufferGeometryUtils.js
+three.js/utils/TextureUtils.js
+three.js/libs/fflate.module.js
+three.js/libs/lil-gui.module.min.js
+three.js/libs/mmdparser.module.js
+
+# Three-VRM / VRM Animation (from npm @pixiv/three-vrm)
+three.js/three-vrm.module.min.js
+three.js/three-vrm-animation.module.js
+
+# ── Editor / OS artifacts ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
